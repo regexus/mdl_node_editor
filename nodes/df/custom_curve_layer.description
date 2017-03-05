@@ -1,0 +1,79 @@
+{
+    "category": "df", 
+    "definitions": "", 
+    "imports": [
+        "df::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "normal_reflectivity", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "grazing_reflectivity", 
+                    "spec_default_value": "1.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 5.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "exponent", 
+                    "spec_default_value": "5.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "weight", 
+                    "spec_default_value": "1.0", 
+                    "type": "float"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "layer", 
+                    "spec_default_value": "bsdf()", 
+                    "type": "bsdf"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "base", 
+                    "spec_default_value": "bsdf()", 
+                    "type": "bsdf"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "normal", 
+                    "spec_default_value": "state::normal()", 
+                    "type": "float3"
+                }
+            ], 
+            "name": "float,float,float,float,bsdf,bsdf,float3", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "bsdf"
+                }
+            ]
+        }
+    ]
+}

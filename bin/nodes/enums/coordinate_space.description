@@ -1,0 +1,29 @@
+{
+    "category": "state", 
+    "definitions": "", 
+    "imports": [
+        "state::coordinate_space"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": "coordinate_internal", 
+                    "expose_as_input": false, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "coordinate_space", 
+                    "type": "coordinate_space"
+                }
+            ], 
+            "name": "default", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "coordinate_space"
+                }
+            ]
+        }
+    ]
+}

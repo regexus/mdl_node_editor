@@ -1,0 +1,20 @@
+{
+    "category": "df", 
+    "definitions": "", 
+    "imports": [
+        "df::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [], 
+            "name": "", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "edf"
+                }
+            ]
+        }
+    ]
+}

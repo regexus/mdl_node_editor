@@ -1,0 +1,44 @@
+{
+    "category": "buildins", 
+    "definitions": "", 
+    "imports": [], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "displacement", 
+                    "spec_default_value": "float3(0.0)", 
+                    "type": "float3"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "cutout_opacity", 
+                    "spec_default_value": "1.0", 
+                    "type": "float"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "normal", 
+                    "spec_default_value": "state::normal()", 
+                    "type": "float3"
+                }
+            ], 
+            "name": "float3,float,float3", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "material_geometry"
+                }
+            ]
+        }
+    ]
+}

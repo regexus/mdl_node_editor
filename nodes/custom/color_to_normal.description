@@ -1,0 +1,42 @@
+{
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_parameter": true,
+                    "type": "color",
+                    "name": "value",
+                    "default_value": [0,0,0],
+                    "spec_default_value": "color(0)",
+                    "expose_as_input": true
+                },
+                {
+                    "expose_as_parameter": true,
+                    "type": "float",
+                    "name": "nm_multiplier",
+                    "default_value": 1.0,
+                    "spec_default_value": "1.0",
+                    "expose_as_input": true
+                },
+                {
+                    "expose_as_parameter": true,
+                    "type": "bool",
+                    "name": "apply_gamma",
+                    "default_value": true,
+                    "spec_default_value": "true",
+                    "expose_as_input": true
+                }
+            ],
+            "name": "default",
+            "outputs": [
+                {
+                    "type": "float3",
+                    "name": "output"
+                }
+            ]
+        }
+    ],
+    "imports": ["math::*", "state::*"],
+    "category": "custom",
+    "definitions": "float3 color_to_normal(color value, float nm_multiplier = 1.0, bool apply_gamma = true){\n    float3 value_as_float3 = float3(value);\n    if (apply_gamma == true)\n        value_as_float3 = math::pow(value_as_float3, 0.45f);\n    // Fix the range\n    value_as_float3 = value_as_float3*2.0-1.0;\n    return math::normalize(state::normal()*(1-value_as_float3[0]*value_as_float3[0]-value_as_float3[1]*value_as_float3[1]) + state::texture_tangent_u(0)*value_as_float3[0]*nm_multiplier + state::texture_tangent_v(0)*value_as_float3[1]*nm_multiplier);\n}"
+}

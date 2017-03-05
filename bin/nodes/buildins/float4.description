@@ -1,0 +1,55 @@
+{
+    "category": "buildins", 
+    "definitions": "", 
+    "imports": [], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "value1", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "value2", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "value3", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "value4", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }
+            ], 
+            "name": "float,float,float,float", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "float4"
+                }
+            ]
+        }
+    ]
+}

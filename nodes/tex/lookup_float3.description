@@ -1,0 +1,221 @@
+{
+    "category": "tex", 
+    "definitions": "", 
+    "imports": [
+        "tex::*", 
+        "tex::wrap_mode"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "tex", 
+                    "type": "texture_2d"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "coord", 
+                    "type": "float2"
+                }, 
+                {
+                    "default_value": "wrap_repeat", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "wrap_u", 
+                    "spec_default_value": "wrap_repeat", 
+                    "type": "wrap_mode"
+                }, 
+                {
+                    "default_value": "wrap_repeat", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "wrap_v", 
+                    "spec_default_value": "wrap_repeat", 
+                    "type": "wrap_mode"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "crop_u", 
+                    "spec_default_value": "float2(0.0, 1.0)", 
+                    "type": "float2"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "crop_v", 
+                    "spec_default_value": "float2(0.0, 1.0)", 
+                    "type": "float2"
+                }
+            ], 
+            "name": "texture_2d,float2,wrap_mode,wrap_mode,float2,float2", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "float3"
+                }
+            ]
+        }, 
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "tex", 
+                    "type": "texture_3d"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "coord", 
+                    "type": "float3"
+                }, 
+                {
+                    "default_value": "wrap_repeat", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "wrap_u", 
+                    "spec_default_value": "wrap_repeat", 
+                    "type": "wrap_mode"
+                }, 
+                {
+                    "default_value": "wrap_repeat", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "wrap_v", 
+                    "spec_default_value": "wrap_repeat", 
+                    "type": "wrap_mode"
+                }, 
+                {
+                    "default_value": "wrap_repeat", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "wrap_w", 
+                    "spec_default_value": "wrap_repeat", 
+                    "type": "wrap_mode"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "crop_u", 
+                    "spec_default_value": "float2(0.0, 1.0)", 
+                    "type": "float2"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "crop_v", 
+                    "spec_default_value": "float2(0.0, 1.0)", 
+                    "type": "float2"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "crop_w", 
+                    "spec_default_value": "float2(0.0, 1.0)", 
+                    "type": "float2"
+                }
+            ], 
+            "name": "texture_3d,float3,wrap_mode,wrap_mode,wrap_mode,float2,float2,float2", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "float3"
+                }
+            ]
+        }, 
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "tex", 
+                    "type": "texture_cube"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "coord", 
+                    "type": "float3"
+                }
+            ], 
+            "name": "texture_cube,float3", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "float3"
+                }
+            ]
+        }, 
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "tex", 
+                    "type": "texture_ptex"
+                }, 
+                {
+                    "default_value": 0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "channel", 
+                    "spec_default_value": "0", 
+                    "type": "int"
+                }
+            ], 
+            "name": "texture_ptex,int", 
+            "outputs": [
+                {
+                    "is_varying": true, 
+                    "name": "output", 
+                    "type": "float3"
+                }
+            ]
+        }
+    ]
+}

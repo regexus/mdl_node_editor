@@ -1,0 +1,24 @@
+{
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_parameter": false,
+                    "type": "float3",
+                    "name": "value",
+                    "expose_as_input": true
+                }
+            ],
+            "name": "default",
+            "outputs": [
+                {
+                    "type": "float2",
+                    "name": "output"
+                }
+            ]
+        }
+    ],
+    "imports": [],
+    "category": "custom",
+    "definitions": "float2 float3_to_float2(float3 value){return float2(value.x, value.y);}"
+}

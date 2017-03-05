@@ -1,0 +1,64 @@
+{
+    "category": "df", 
+    "definitions": "", 
+    "imports": [
+        "df::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": [
+                        1.0, 
+                        1.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "normal_tint", 
+                    "spec_default_value": "color(1.0)", 
+                    "type": "color"
+                }, 
+                {
+                    "default_value": [
+                        1.0, 
+                        1.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "grazing_tint", 
+                    "spec_default_value": "color(1.0)", 
+                    "type": "color"
+                }, 
+                {
+                    "default_value": 5.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "exponent", 
+                    "spec_default_value": "5.0", 
+                    "type": "float"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "base", 
+                    "spec_default_value": "bsdf()", 
+                    "type": "bsdf"
+                }
+            ], 
+            "name": "color,color,float,bsdf", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "bsdf"
+                }
+            ]
+        }
+    ]
+}

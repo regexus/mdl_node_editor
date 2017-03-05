@@ -1,0 +1,158 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "uvw", 
+                    "spec_default_value": "texture_coordinate_info()", 
+                    "type": "texture_coordinate_info"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "color1", 
+                    "spec_default_value": "color(0)", 
+                    "type": "color"
+                }, 
+                {
+                    "default_value": [
+                        1.0, 
+                        1.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "color2", 
+                    "spec_default_value": "color(1)", 
+                    "type": "color"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "size", 
+                    "spec_default_value": "1.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": false, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "apply_marble", 
+                    "spec_default_value": "false", 
+                    "type": "bool"
+                }, 
+                {
+                    "default_value": false, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "apply_dent", 
+                    "spec_default_value": "false", 
+                    "type": "bool"
+                }, 
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "noise_phase", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 1, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "noise_levels", 
+                    "spec_default_value": "1", 
+                    "type": "int"
+                }, 
+                {
+                    "default_value": false, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "absolute_noise", 
+                    "spec_default_value": "false", 
+                    "type": "bool"
+                }, 
+                {
+                    "default_value": false, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "ridged_noise", 
+                    "spec_default_value": "false", 
+                    "type": "bool"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "noise_distortion", 
+                    "spec_default_value": "float3(0.0 )", 
+                    "type": "float3"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "noise_threshold_high", 
+                    "spec_default_value": "1.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "noise_threshold_low", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "noise_bands", 
+                    "spec_default_value": "1.0", 
+                    "type": "float"
+                }
+            ], 
+            "name": "texture_coordinate_info,color,color,float,bool,bool,float,int,bool,bool,float3,float,float,float", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "texture_return"
+                }
+            ]
+        }
+    ]
+}

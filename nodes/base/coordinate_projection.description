@@ -1,0 +1,58 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::*", 
+        "base::projection_mode", 
+        "base::texture_coordinate_system"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": "texture_coordinate_object", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "coordinate_system", 
+                    "spec_default_value": "texture_coordinate_object", 
+                    "type": "texture_coordinate_system"
+                }, 
+                {
+                    "default_value": 0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "texture_space", 
+                    "spec_default_value": "0", 
+                    "type": "int"
+                }, 
+                {
+                    "default_value": "projection_planar", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "projection_type", 
+                    "spec_default_value": "projection_planar", 
+                    "type": "projection_mode"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "projection_transform", 
+                    "spec_default_value": "float4x4(1.0)", 
+                    "type": "float4x4"
+                }
+            ], 
+            "name": "texture_coordinate_system,int,projection_mode,float4x4", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "texture_coordinate_info"
+                }
+            ]
+        }
+    ]
+}

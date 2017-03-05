@@ -1,0 +1,29 @@
+{
+    "category": "tex", 
+    "definitions": "", 
+    "imports": [
+        "tex::wrap_mode"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": "wrap_clamp", 
+                    "expose_as_input": false, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "wrap_mode", 
+                    "type": "wrap_mode"
+                }
+            ], 
+            "name": "default", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "wrap_mode"
+                }
+            ]
+        }
+    ]
+}

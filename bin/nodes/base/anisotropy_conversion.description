@@ -1,0 +1,65 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": 0.5, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "roughness", 
+                    "spec_default_value": "0.5", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "anisotropy", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "anisotropy_rotation", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "tangent_u", 
+                    "spec_default_value": "state::texture_tangent_u(0)", 
+                    "type": "float3"
+                }, 
+                {
+                    "default_value": false, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "mia_anisotropy_semantic", 
+                    "spec_default_value": "false", 
+                    "type": "bool"
+                }
+            ], 
+            "name": "float,float,float,float3,bool", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "anisotropy_return"
+                }
+            ]
+        }
+    ]
+}

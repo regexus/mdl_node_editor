@@ -1,0 +1,172 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "uvw", 
+                    "spec_default_value": "texture_coordinate_info()", 
+                    "type": "texture_coordinate_info"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "factor", 
+                    "spec_default_value": "1", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 4.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "number_of_rows", 
+                    "spec_default_value": "4.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 4.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "number_of_columns", 
+                    "spec_default_value": "4.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.02, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "grout_width", 
+                    "spec_default_value": "0.02", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.02, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "grout_height", 
+                    "spec_default_value": "0.02", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "grout_roughness", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "missing_tile_amount", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "tile_brightness_variation", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 2.284, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "seed", 
+                    "spec_default_value": "2.284", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 1, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "special_row_index", 
+                    "spec_default_value": "1", 
+                    "type": "int"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "special_row_width_factor", 
+                    "spec_default_value": "1.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 1, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "special_column_index", 
+                    "spec_default_value": "1", 
+                    "type": "int"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "special_column_height_factor", 
+                    "spec_default_value": "1.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.5, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "odd_row_offset", 
+                    "spec_default_value": "0.5", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "random_row_offset", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "normal", 
+                    "spec_default_value": "state::normal()", 
+                    "type": "float3"
+                }
+            ], 
+            "name": "texture_coordinate_info,float,float,float,float,float,float,float,float,float,int,float,int,float,float,float,float3", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "float3"
+                }
+            ]
+        }
+    ]
+}

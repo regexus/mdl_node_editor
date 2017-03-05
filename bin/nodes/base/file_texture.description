@@ -1,0 +1,124 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::*", 
+        "tex::wrap_mode", 
+        "base::mono_mode"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "texture", 
+                    "type": "texture_2d"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "color_offset", 
+                    "spec_default_value": "color(0.0)", 
+                    "type": "color"
+                }, 
+                {
+                    "default_value": [
+                        1.0, 
+                        1.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "color_scale", 
+                    "spec_default_value": "color(1.0)", 
+                    "type": "color"
+                }, 
+                {
+                    "default_value": "mono_alpha", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "mono_source", 
+                    "spec_default_value": "mono_alpha", 
+                    "type": "mono_mode"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "uvw", 
+                    "spec_default_value": "texture_coordinate_info()", 
+                    "type": "texture_coordinate_info"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "crop_u", 
+                    "spec_default_value": "float2(0.0, 1.0)", 
+                    "type": "float2"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "crop_v", 
+                    "spec_default_value": "float2(0.0, 1.0)", 
+                    "type": "float2"
+                }, 
+                {
+                    "default_value": "wrap_repeat", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "wrap_u", 
+                    "spec_default_value": "tex::wrap_repeat", 
+                    "type": "wrap_mode"
+                }, 
+                {
+                    "default_value": "wrap_repeat", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "wrap_v", 
+                    "spec_default_value": "tex::wrap_repeat", 
+                    "type": "wrap_mode"
+                }, 
+                {
+                    "default_value": false, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "clip", 
+                    "spec_default_value": "false", 
+                    "type": "bool"
+                }
+            ], 
+            "name": "texture_2d,color,color,mono_mode,texture_coordinate_info,float2,float2,wrap_mode,wrap_mode,bool", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "texture_return"
+                }
+            ]
+        }
+    ]
+}

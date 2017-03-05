@@ -1,0 +1,61 @@
+{
+    "category": "math", 
+    "definitions": "", 
+    "imports": [
+        "math::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "a", 
+                    "type": "float3"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "b", 
+                    "type": "float3"
+                }
+            ], 
+            "name": "float3,float3", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "float3"
+                }
+            ]
+        }, 
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "a", 
+                    "type": "double3"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "b", 
+                    "type": "double3"
+                }
+            ], 
+            "name": "double3,double3", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "double3"
+                }
+            ]
+        }
+    ]
+}

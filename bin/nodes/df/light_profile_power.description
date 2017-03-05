@@ -1,0 +1,28 @@
+{
+    "category": "df", 
+    "definitions": "", 
+    "imports": [
+        "df::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "profile", 
+                    "type": "light_profile"
+                }
+            ], 
+            "name": "light_profile", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "float"
+                }
+            ]
+        }
+    ]
+}

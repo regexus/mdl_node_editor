@@ -1,0 +1,51 @@
+{
+    "category": "buildins", 
+    "definitions": "", 
+    "imports": [
+        "::intensity_mode"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "emission", 
+                    "spec_default_value": "edf()", 
+                    "type": "edf"
+                }, 
+                {
+                    "default_value": [
+                        1.0, 
+                        1.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "intensity", 
+                    "spec_default_value": "color(0.0)", 
+                    "type": "color"
+                }, 
+                {
+                    "default_value": "intensity_radiant_exitance", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "mode", 
+                    "spec_default_value": "intensity_radiant_exitance", 
+                    "type": "intensity_mode"
+                }
+            ], 
+            "name": "edf,color,intensity_mode", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "material_emission"
+                }
+            ]
+        }
+    ]
+}

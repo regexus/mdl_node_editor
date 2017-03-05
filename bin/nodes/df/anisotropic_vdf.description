@@ -1,0 +1,30 @@
+{
+    "category": "df", 
+    "definitions": "", 
+    "imports": [
+        "df::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "directional_bias", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }
+            ], 
+            "name": "float", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "vdf"
+                }
+            ]
+        }
+    ]
+}

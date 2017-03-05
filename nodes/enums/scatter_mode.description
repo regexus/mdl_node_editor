@@ -1,0 +1,29 @@
+{
+    "category": "df", 
+    "definitions": "", 
+    "imports": [
+        "df::scatter_mode"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": "scatter_reflect", 
+                    "expose_as_input": false, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "scatter_mode", 
+                    "type": "scatter_mode"
+                }
+            ], 
+            "name": "default", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "scatter_mode"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "overloads": [
+    {
+      "inputs": [
+        {
+          "expose_as_parameter": false, 
+          "type": "texture_return", 
+          "name": "tex_ret", 
+          "expose_as_input": true
+        }
+      ], 
+      "name": "default", 
+      "outputs": [
+        {
+          "type": "float", 
+          "name": "output"
+        }
+      ]
+    }
+  ], 
+  "imports": [], 
+  "category": "custom", 
+  "definitions": "float texture_return_to_float(base::texture_return tex_ret){return tex_ret.mono;}"
+}

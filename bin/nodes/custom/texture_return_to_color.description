@@ -1,0 +1,24 @@
+{
+  "overloads": [
+    {
+      "inputs": [
+        {
+          "expose_as_parameter": false, 
+          "type": "texture_return", 
+          "name": "tex_ret", 
+          "expose_as_input": true
+        }
+      ], 
+      "name": "default", 
+      "outputs": [
+        {
+          "type": "color", 
+          "name": "output"
+        }
+      ]
+    }
+  ], 
+  "imports": [], 
+  "category": "custom", 
+  "definitions": "color texture_return_to_color(base::texture_return tex_ret){return tex_ret.tint;}"
+}

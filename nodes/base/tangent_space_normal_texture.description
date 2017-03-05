@@ -1,0 +1,130 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "texture", 
+                    "type": "texture_2d"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "factor", 
+                    "spec_default_value": "1.0f", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": false, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "flip_tangent_u", 
+                    "spec_default_value": "false", 
+                    "type": "bool"
+                }, 
+                {
+                    "default_value": false, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "flip_tangent_v", 
+                    "spec_default_value": "false", 
+                    "type": "bool"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "uvw", 
+                    "spec_default_value": "texture_coordinate_info()", 
+                    "type": "texture_coordinate_info"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "crop_u", 
+                    "spec_default_value": "float2(0.0, 1.0)", 
+                    "type": "float2"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "crop_v", 
+                    "spec_default_value": "float2(0.0, 1.0)", 
+                    "type": "float2"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "wrap_mode", 
+                    "spec_default_value": "tex::wrap_repeat", 
+                    "type": "tex"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "wrap_mode", 
+                    "spec_default_value": "tex::wrap_repeat", 
+                    "type": "tex"
+                }, 
+                {
+                    "default_value": false, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "clip", 
+                    "spec_default_value": "false", 
+                    "type": "bool"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "scale", 
+                    "spec_default_value": "1.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "offset", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }
+            ], 
+            "name": "texture_2d,float,bool,bool,texture_coordinate_info,float2,float2,tex,tex,bool,float,float", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "float3"
+                }
+            ]
+        }
+    ]
+}

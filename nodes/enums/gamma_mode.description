@@ -1,0 +1,29 @@
+{
+    "category": "tex", 
+    "definitions": "", 
+    "imports": [
+        "tex::gamma_mode"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": "gamma_default", 
+                    "expose_as_input": false, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "gamma_mode", 
+                    "type": "gamma_mode"
+                }
+            ], 
+            "name": "default", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "gamma_mode"
+                }
+            ]
+        }
+    ]
+}

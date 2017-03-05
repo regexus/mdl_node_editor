@@ -1,0 +1,61 @@
+{
+    "category": "tex", 
+    "definitions": "", 
+    "imports": [
+        "tex::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "tex", 
+                    "type": "texture_2d"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "coord", 
+                    "type": "int2"
+                }
+            ], 
+            "name": "texture_2d,int2", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "float4"
+                }
+            ]
+        }, 
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "tex", 
+                    "type": "texture_3d"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "coord", 
+                    "type": "int3"
+                }
+            ], 
+            "name": "texture_3d,int3", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "float4"
+                }
+            ]
+        }
+    ]
+}

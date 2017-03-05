@@ -1,0 +1,73 @@
+{
+    "category": "buildins", 
+    "definitions": "", 
+    "imports": [], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": false, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "thin_walled", 
+                    "spec_default_value": "false", 
+                    "type": "bool"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "surface", 
+                    "spec_default_value": "material_surface()", 
+                    "type": "material_surface"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "backface", 
+                    "spec_default_value": "material_surface()", 
+                    "type": "material_surface"
+                }, 
+                {
+                    "default_value": [
+                        1.0, 
+                        1.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "ior", 
+                    "spec_default_value": "color(1.0)", 
+                    "type": "color"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "volume", 
+                    "spec_default_value": "material_volume()", 
+                    "type": "material_volume"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "geometry", 
+                    "spec_default_value": "material_geometry()", 
+                    "type": "material_geometry"
+                }
+            ], 
+            "name": "bool,material_surface,material_surface,color,material_volume,material_geometry", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "material"
+                }
+            ]
+        }
+    ]
+}

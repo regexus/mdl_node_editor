@@ -1,0 +1,28 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "glossiness", 
+                    "type": "float"
+                }
+            ], 
+            "name": "float", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "float"
+                }
+            ]
+        }
+    ]
+}

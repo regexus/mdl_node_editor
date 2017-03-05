@@ -1,0 +1,47 @@
+{
+    "category": "df", 
+    "definitions": "", 
+    "imports": [
+        "df::*", 
+        "df::scatter_mode"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "measurement", 
+                    "type": "bsdf_measurement"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "multiplier", 
+                    "spec_default_value": "1.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": "scatter_reflect", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "mode", 
+                    "spec_default_value": "scatter_reflect", 
+                    "type": "scatter_mode"
+                }
+            ], 
+            "name": "bsdf_measurement,float,scatter_mode", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "bsdf"
+                }
+            ]
+        }
+    ]
+}

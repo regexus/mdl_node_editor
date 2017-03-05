@@ -1,0 +1,48 @@
+{
+    "category": "state", 
+    "definitions": "", 
+    "imports": [
+        "state::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "radius", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": false, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "across_materials", 
+                    "spec_default_value": "false", 
+                    "type": "bool"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "roundness", 
+                    "spec_default_value": "1.0", 
+                    "type": "float"
+                }
+            ], 
+            "name": "float,bool,float", 
+            "outputs": [
+                {
+                    "is_varying": true, 
+                    "name": "output", 
+                    "type": "float3"
+                }
+            ]
+        }
+    ]
+}

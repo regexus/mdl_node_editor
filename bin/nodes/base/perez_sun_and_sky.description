@@ -1,0 +1,110 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": 500.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "direct_normal_irradiance", 
+                    "spec_default_value": "500.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 50.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "diffuse_horizontal_irradiance", 
+                    "spec_default_value": "50.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        0.229271, 
+                        0.418882
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "sun_direction", 
+                    "spec_default_value": "float3(0.0, 0.229271, 0.418882)", 
+                    "type": "float3"
+                }, 
+                {
+                    "default_value": [
+                        0.2, 
+                        0.2, 
+                        0.2
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "ground_color", 
+                    "spec_default_value": "color(0.2, 0.2, 0.2)", 
+                    "type": "color"
+                }, 
+                {
+                    "default_value": 0.1, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "horizon_blur", 
+                    "spec_default_value": "0.1", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": true, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "y_is_up", 
+                    "spec_default_value": "true", 
+                    "type": "bool"
+                }, 
+                {
+                    "default_value": 180.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "julian_date", 
+                    "spec_default_value": "180.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 11.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "dew_point", 
+                    "spec_default_value": "11.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.5, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "haze", 
+                    "spec_default_value": "0.5", 
+                    "type": "float"
+                }
+            ], 
+            "name": "float,float,float3,color,float,bool,float,float,float", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "color"
+                }
+            ]
+        }
+    ]
+}

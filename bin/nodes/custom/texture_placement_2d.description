@@ -1,0 +1,72 @@
+{
+  "overloads": [
+    {
+      "inputs": [
+        {
+          "default_value": 1.0, 
+          "spec_default_value": "1.0", 
+          "expose_as_parameter": true, 
+          "type": "float", 
+          "is_uniform": true, 
+          "name": "scale_u", 
+          "expose_as_input": true
+        },
+         {
+          "default_value": 1.0, 
+          "spec_default_value": "1.0", 
+          "expose_as_parameter": true, 
+          "type": "float", 
+          "is_uniform": true, 
+          "name": "scale_v", 
+          "expose_as_input": true
+        },
+         {
+          "default_value": 0.0, 
+          "spec_default_value": "0.0", 
+          "expose_as_parameter": true, 
+          "type": "float", 
+          "is_uniform": true, 
+          "name": "rotation", 
+          "expose_as_input": true
+        },
+         {
+          "default_value": 0.0, 
+          "spec_default_value": "0.0", 
+          "expose_as_parameter": true, 
+          "type": "float", 
+          "is_uniform": true, 
+          "name": "shift_u", 
+          "expose_as_input": true
+        },
+         {
+          "default_value": 0.0, 
+          "spec_default_value": "0.0", 
+          "expose_as_parameter": true, 
+          "type": "float", 
+          "is_uniform": true, 
+          "name": "shift_v", 
+          "expose_as_input": true
+        },
+         {
+          "default_value": 0, 
+          "spec_default_value": "0", 
+          "expose_as_parameter": true, 
+          "type": "int", 
+          "is_uniform": true, 
+          "name": "tex_space", 
+          "expose_as_input": true
+        }
+      ], 
+      "name": "float, float, float, float, float, int", 
+      "outputs": [
+        {
+          "type": "texture_coordinate_info", 
+          "name": "output"
+        }
+      ]
+    }
+  ], 
+  "imports": ["base::texture_coordinate_system", "base::*"], 
+  "category": "custom", 
+  "definitions": "export using base import texture_coordinate_info;\n        texture_coordinate_info texture_placement_2d(\n          uniform float scale_u = float(1.0),\n          uniform float scale_v = float(1.0), \n          uniform float rotation = float(0.0), \n          uniform float shift_u = float(0.0), \n          uniform float shift_v = float(0.0),\n          uniform int tex_space = int(0)\n        ) \n        {\n          return base::transform_coordinate(\n          coordinate : base::coordinate_source(\n                           texture_space : tex_space,\n                           coordinate_system : base::texture_coordinate_uvw\n                       ),\n          transform : base::rotation_translation_scale(\n                          scaling : float3(\n                                        y : scale_v,\n                                        x : scale_u,\n                                        z : float(1.0)\n                                    ),\n                          rotation : float3(\n                                         y : float(0.0),\n                                         x : float(0.0),\n                                         z : float(\n                                                 rotation\n                                             )\n                                     ),\n                          translation : float3(\n                                            y : shift_v,\n                                            x : shift_u,\n                                            z : float(0.0)\n                                        )\n                      )\n          );\n        }\n  "
+}

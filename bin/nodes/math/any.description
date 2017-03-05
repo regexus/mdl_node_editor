@@ -1,0 +1,85 @@
+{
+    "category": "math", 
+    "definitions": "", 
+    "imports": [
+        "math::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "a", 
+                    "type": "bool"
+                }
+            ], 
+            "name": "bool", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "bool"
+                }
+            ]
+        }, 
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "a", 
+                    "type": "bool2"
+                }
+            ], 
+            "name": "bool2", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "bool"
+                }
+            ]
+        }, 
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "a", 
+                    "type": "bool3"
+                }
+            ], 
+            "name": "bool3", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "bool"
+                }
+            ]
+        }, 
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "a", 
+                    "type": "bool4"
+                }
+            ], 
+            "name": "bool4", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "bool"
+                }
+            ]
+        }
+    ]
+}

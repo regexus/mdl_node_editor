@@ -1,0 +1,44 @@
+{
+    "category": "df", 
+    "definitions": "", 
+    "imports": [
+        "df::*", 
+        "df::scatter_mode"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": [
+                        1.0, 
+                        1.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "tint", 
+                    "spec_default_value": "color(1.0)", 
+                    "type": "color"
+                }, 
+                {
+                    "default_value": "scatter_reflect", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "mode", 
+                    "spec_default_value": "scatter_reflect", 
+                    "type": "scatter_mode"
+                }
+            ], 
+            "name": "color,scatter_mode", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "bsdf"
+                }
+            ]
+        }
+    ]
+}

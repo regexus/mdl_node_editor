@@ -1,0 +1,39 @@
+{
+    "category": "buildins", 
+    "definitions": "", 
+    "imports": [
+        "tex::gamma_mode"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": "", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "name", 
+                    "spec_default_value": "\"\"", 
+                    "type": "string"
+                }, 
+                {
+                    "default_value": "gamma_default", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "gamma", 
+                    "spec_default_value": "tex::gamma_default", 
+                    "type": "gamma_mode"
+                }
+            ], 
+            "name": "string,gamma_mode", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "texture_3d"
+                }
+            ]
+        }
+    ]
+}

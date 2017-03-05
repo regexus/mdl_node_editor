@@ -1,0 +1,36 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "transform", 
+                    "type": "float4x4"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "coordinate", 
+                    "spec_default_value": "texture_coordinate_info()", 
+                    "type": "texture_coordinate_info"
+                }
+            ], 
+            "name": "float4x4,texture_coordinate_info", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "texture_coordinate_info"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "category": "state", 
+    "definitions": "", 
+    "imports": [
+        "state::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [], 
+            "name": "", 
+            "outputs": [
+                {
+                    "is_varying": true, 
+                    "name": "output", 
+                    "type": "int"
+                }
+            ]
+        }
+    ]
+}

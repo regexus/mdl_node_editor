@@ -1,0 +1,129 @@
+{
+    "intensity_mode": {
+        "values": [
+            "intensity_radiant_exitance", 
+            "intensity_power"
+        ], 
+        "module": ""
+    }, 
+    "mono_mode": {
+        "values": [
+            "mono_alpha", 
+            "mono_average", 
+            "mono_luminance", 
+            "mono_maximum"
+        ], 
+        "module": "base"
+    }, 
+    "wrap_mode": {
+        "values": [
+            "wrap_clamp", 
+            "wrap_repeat", 
+            "wrap_mirrored_repeat", 
+            "wrap_clip"
+        ], 
+        "module": "tex"
+    }, 
+    "texture_coordinate_system": {
+        "values": [
+            "texture_coordinate_uvw", 
+            "texture_coordinate_world", 
+            "texture_coordinate_object"
+        ], 
+        "module": "base"
+    }, 
+    "coordinate_space": {
+        "values": [
+            "coordinate_internal", 
+            "coordinate_object", 
+            "coordinate_world"
+        ], 
+        "module": "state"
+    }, 
+    "color_layer_mode": {
+        "values": [
+            "color_layer_blend", 
+            "color_layer_add", 
+            "color_layer_multiply", 
+            "color_layer_screen", 
+            "color_layer_overlay", 
+            "color_layer_brightness", 
+            "color_layer_color", 
+            "color_layer_exclusion", 
+            "color_layer_average", 
+            "color_layer_lighten", 
+            "color_layer_darken", 
+            "color_layer_sub", 
+            "color_layer_negation", 
+            "color_layer_difference", 
+            "color_layer_softlight", 
+            "color_layer_colordodge", 
+            "color_layer_reflect", 
+            "color_layer_colorburn", 
+            "color_layer_phoenix", 
+            "color_layer_hardlight", 
+            "color_layer_pinlight", 
+            "color_layer_hardmix", 
+            "color_layer_lineardodge", 
+            "color_layer_linearburn", 
+            "color_layer_spotlight", 
+            "color_layer_spotlightblend", 
+            "color_layer_hue", 
+            "color_layer_saturation"
+        ], 
+        "module": "base"
+    }, 
+    "projection_mode": {
+        "values": [
+            "projection_cubic", 
+            "projection_spherical", 
+            "projection_cylindrical", 
+            "projection_infinite_cylindrical", 
+            "projection_planar", 
+            "projection_spherical_normalized", 
+            "projection_cylindrical_normalized", 
+            "projection_infinite_cylindrical_normalized", 
+            "projection_tri_planar"
+        ], 
+        "module": "base"
+    }, 
+    "gamma_mode": {
+        "values": [
+            "gamma_default", 
+            "gamma_linear", 
+            "gamma_srgb"
+        ], 
+        "module": "tex"
+    }, 
+    "gradient_mode": {
+        "values": [
+            "gradient_linear", 
+            "gradient_squared", 
+            "gradient_box", 
+            "gradient_diagonal", 
+            "gradient_90_degree", 
+            "gradient_symmetric_90_degree", 
+            "gradient_radial", 
+            "gradient_360_degree"
+        ], 
+        "module": "base"
+    }, 
+    "scatter_mode": {
+        "values": [
+            "scatter_reflect", 
+            "scatter_transmit", 
+            "scatter_reflect_transmit"
+        ], 
+        "module": "df"
+    }, 
+    "gradient_interpolation_mode": {
+        "values": [
+            "gradient_interpolation_linear", 
+            "gradient_interpolation_off", 
+            "gradient_interpolation_ease_in", 
+            "gradient_interpolation_ease_out", 
+            "gradient_interpolation_ease_in_out"
+        ], 
+        "module": "base"
+    }
+}

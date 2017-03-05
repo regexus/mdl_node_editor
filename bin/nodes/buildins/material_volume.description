@@ -1,0 +1,43 @@
+{
+    "category": "buildins", 
+    "definitions": "", 
+    "imports": [], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "scattering", 
+                    "spec_default_value": "vdf()", 
+                    "type": "vdf"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "absorption", 
+                    "spec_default_value": "color()", 
+                    "type": "color"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "scattering", 
+                    "spec_default_value": "color()", 
+                    "type": "color"
+                }
+            ], 
+            "name": "vdf,color,color", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "material_volume"
+                }
+            ]
+        }
+    ]
+}

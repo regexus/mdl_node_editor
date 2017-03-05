@@ -1,0 +1,60 @@
+{
+    "category": "df", 
+    "definitions": "", 
+    "imports": [
+        "df::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": 0.01, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "roughness_u", 
+                    "spec_default_value": "0.01", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.01, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "roughness_v", 
+                    "spec_default_value": "0.01", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": [
+                        1.0, 
+                        1.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "tint", 
+                    "spec_default_value": "color(1.0)", 
+                    "type": "color"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "tangent_u", 
+                    "spec_default_value": "state::texture_tangent_u(0)", 
+                    "type": "float3"
+                }
+            ], 
+            "name": "float,float,color,float3", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "bsdf"
+                }
+            ]
+        }
+    ]
+}

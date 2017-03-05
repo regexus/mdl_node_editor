@@ -1,0 +1,46 @@
+{
+    "category": "buildins", 
+    "definitions": "", 
+    "imports": [], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": false, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "value1", 
+                    "spec_default_value": "false", 
+                    "type": "bool"
+                }, 
+                {
+                    "default_value": false, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "value2", 
+                    "spec_default_value": "false", 
+                    "type": "bool"
+                }, 
+                {
+                    "default_value": false, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "value3", 
+                    "spec_default_value": "false", 
+                    "type": "bool"
+                }
+            ], 
+            "name": "bool,bool,bool", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "bool3"
+                }
+            ]
+        }
+    ]
+}

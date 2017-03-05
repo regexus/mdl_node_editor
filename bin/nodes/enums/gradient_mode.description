@@ -1,0 +1,29 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::gradient_mode"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": "gradient_linear", 
+                    "expose_as_input": false, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "gradient_mode", 
+                    "type": "gradient_mode"
+                }
+            ], 
+            "name": "default", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "gradient_mode"
+                }
+            ]
+        }
+    ]
+}

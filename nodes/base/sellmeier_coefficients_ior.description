@@ -1,0 +1,47 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": [
+                        1.04, 
+                        0.23, 
+                        1.01
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "sellmeier_B", 
+                    "spec_default_value": "float3(1.04, 0.23, 1.01)", 
+                    "type": "float3"
+                }, 
+                {
+                    "default_value": [
+                        0.006, 
+                        0.2, 
+                        103.56
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "sellmeier_C", 
+                    "spec_default_value": "float3(0.006, 0.200, 103.56)", 
+                    "type": "float3"
+                }
+            ], 
+            "name": "float3,float3", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "color"
+                }
+            ]
+        }
+    ]
+}

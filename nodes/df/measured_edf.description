@@ -1,0 +1,71 @@
+{
+    "category": "df", 
+    "definitions": "", 
+    "imports": [
+        "df::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "profile", 
+                    "type": "light_profile"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "multiplier", 
+                    "spec_default_value": "1.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": true, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "global_distribution", 
+                    "spec_default_value": "true", 
+                    "type": "bool"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "global_frame", 
+                    "spec_default_value": "float3x3(1.0)", 
+                    "type": "float3x3"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "tangent_u", 
+                    "spec_default_value": "state::texture_tangent_u(0)", 
+                    "type": "float3"
+                }, 
+                {
+                    "default_value": "", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "handle", 
+                    "spec_default_value": "\"\"", 
+                    "type": "string"
+                }
+            ], 
+            "name": "light_profile,float,bool,float3x3,float3,string", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "edf"
+                }
+            ]
+        }
+    ]
+}

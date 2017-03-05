@@ -1,0 +1,36 @@
+{
+    "category": "state", 
+    "definitions": "", 
+    "imports": [
+        "state::coordinate_space", 
+        "state::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "from", 
+                    "type": "coordinate_space"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "to", 
+                    "type": "coordinate_space"
+                }
+            ], 
+            "name": "coordinate_space,coordinate_space", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "float4x4"
+                }
+            ]
+        }
+    ]
+}

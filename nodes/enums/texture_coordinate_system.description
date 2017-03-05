@@ -1,0 +1,29 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::texture_coordinate_system"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": "texture_coordinate_uvw", 
+                    "expose_as_input": false, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "texture_coordinate_system", 
+                    "type": "texture_coordinate_system"
+                }
+            ], 
+            "name": "default", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "texture_coordinate_system"
+                }
+            ]
+        }
+    ]
+}

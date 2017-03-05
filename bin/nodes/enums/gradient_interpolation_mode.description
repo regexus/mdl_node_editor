@@ -1,0 +1,29 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::gradient_interpolation_mode"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": "gradient_interpolation_linear", 
+                    "expose_as_input": false, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "gradient_interpolation_mode", 
+                    "type": "gradient_interpolation_mode"
+                }
+            ], 
+            "name": "default", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "gradient_interpolation_mode"
+                }
+            ]
+        }
+    ]
+}

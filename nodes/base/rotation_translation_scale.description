@@ -1,0 +1,60 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": [
+                        0.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "rotation", 
+                    "spec_default_value": "float3(0.0)", 
+                    "type": "float3"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "translation", 
+                    "spec_default_value": "float3(0.0)", 
+                    "type": "float3"
+                }, 
+                {
+                    "default_value": [
+                        1.0, 
+                        1.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "scaling", 
+                    "spec_default_value": "float3(1.0)", 
+                    "type": "float3"
+                }
+            ], 
+            "name": "float3,float3,float3", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "float4x4"
+                }
+            ]
+        }
+    ]
+}

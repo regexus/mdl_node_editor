@@ -1,0 +1,35 @@
+{
+    "category": "buildins", 
+    "definitions": "", 
+    "imports": [], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "scattering", 
+                    "spec_default_value": "bsdf()", 
+                    "type": "bsdf"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "emission", 
+                    "spec_default_value": "material_emission()", 
+                    "type": "material_emission"
+                }
+            ], 
+            "name": "bsdf,material_emission", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "material_surface"
+                }
+            ]
+        }
+    ]
+}

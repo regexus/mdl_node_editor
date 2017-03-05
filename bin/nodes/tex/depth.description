@@ -1,0 +1,28 @@
+{
+    "category": "tex", 
+    "definitions": "", 
+    "imports": [
+        "tex::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "tex", 
+                    "type": "texture_3d"
+                }
+            ], 
+            "name": "texture_3d", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "int"
+                }
+            ]
+        }
+    ]
+}

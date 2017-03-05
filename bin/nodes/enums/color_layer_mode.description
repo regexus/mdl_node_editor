@@ -1,0 +1,29 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::color_layer_mode"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": "color_layer_blend", 
+                    "expose_as_input": false, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "color_layer_mode", 
+                    "type": "color_layer_mode"
+                }
+            ], 
+            "name": "default", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "color_layer_mode"
+                }
+            ]
+        }
+    ]
+}

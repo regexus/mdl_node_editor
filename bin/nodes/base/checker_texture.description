@@ -1,0 +1,73 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "uvw", 
+                    "spec_default_value": "texture_coordinate_info()", 
+                    "type": "texture_coordinate_info"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "color1", 
+                    "spec_default_value": "color(0)", 
+                    "type": "color"
+                }, 
+                {
+                    "default_value": [
+                        1.0, 
+                        1.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "color2", 
+                    "spec_default_value": "color(1)", 
+                    "type": "color"
+                }, 
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "blur", 
+                    "spec_default_value": "0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.5, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "checker_position", 
+                    "spec_default_value": "0.5", 
+                    "type": "float"
+                }
+            ], 
+            "name": "texture_coordinate_info,color,color,float,float", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "texture_return"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "category": "buildins", 
+    "definitions": "", 
+    "imports": [
+        "::intensity_mode"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": "intensity_radiant_exitance", 
+                    "expose_as_input": false, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "intensity_mode", 
+                    "type": "intensity_mode"
+                }
+            ], 
+            "name": "default", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "intensity_mode"
+                }
+            ]
+        }
+    ]
+}

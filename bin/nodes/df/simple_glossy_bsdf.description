@@ -1,0 +1,70 @@
+{
+    "category": "df", 
+    "definitions": "", 
+    "imports": [
+        "df::*", 
+        "df::scatter_mode"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": 0.01, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "roughness_u", 
+                    "spec_default_value": "0.01", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.01, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "roughness_v", 
+                    "spec_default_value": "0.01", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": [
+                        1.0, 
+                        1.0, 
+                        1.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "tint", 
+                    "spec_default_value": "color(1.0)", 
+                    "type": "color"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": false, 
+                    "name": "tangent_u", 
+                    "spec_default_value": "state::texture_tangent_u(0)", 
+                    "type": "float3"
+                }, 
+                {
+                    "default_value": "scatter_reflect", 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "mode", 
+                    "spec_default_value": "scatter_reflect", 
+                    "type": "scatter_mode"
+                }
+            ], 
+            "name": "float,float,color,float3,scatter_mode", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "bsdf"
+                }
+            ]
+        }
+    ]
+}

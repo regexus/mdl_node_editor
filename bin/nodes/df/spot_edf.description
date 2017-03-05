@@ -1,0 +1,54 @@
+{
+    "category": "df", 
+    "definitions": "", 
+    "imports": [
+        "df::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "exponent", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 3.141592653589793, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "spread", 
+                    "spec_default_value": "math::PI", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": true, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "global_distribution", 
+                    "spec_default_value": "true", 
+                    "type": "bool"
+                }, 
+                {
+                    "expose_as_input": true, 
+                    "expose_as_parameter": false, 
+                    "is_uniform": true, 
+                    "name": "global_frame", 
+                    "spec_default_value": "float3x3(1.0)", 
+                    "type": "float3x3"
+                }
+            ], 
+            "name": "float,float,bool,float3x3", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "edf"
+                }
+            ]
+        }
+    ]
+}

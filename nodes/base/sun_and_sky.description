@@ -1,0 +1,190 @@
+{
+    "category": "base", 
+    "definitions": "", 
+    "imports": [
+        "base::*"
+    ], 
+    "overloads": [
+        {
+            "inputs": [
+                {
+                    "default_value": true, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "on", 
+                    "spec_default_value": "true", 
+                    "type": "bool"
+                }, 
+                {
+                    "default_value": 0.025, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "multiplier", 
+                    "spec_default_value": "0.025", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": [
+                        0.000666667, 
+                        0.000666667, 
+                        0.000666667
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "rgb_unit_conversion", 
+                    "spec_default_value": "color(0.000666667)", 
+                    "type": "color"
+                }, 
+                {
+                    "default_value": 0.5, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "haze", 
+                    "spec_default_value": "0.5", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "redblueshift", 
+                    "spec_default_value": "0.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.5, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "saturation", 
+                    "spec_default_value": "0.5", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.001, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "horizon_height", 
+                    "spec_default_value": "0.001", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.1, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "horizon_blur", 
+                    "spec_default_value": "0.1", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": [
+                        0.4, 
+                        0.4, 
+                        0.4
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "ground_color", 
+                    "spec_default_value": "color(0.4, 0.4, 0.4)", 
+                    "type": "color"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": false, 
+                    "name": "night_color", 
+                    "spec_default_value": "color(0.0, 0.0, 0.0)", 
+                    "type": "color"
+                }, 
+                {
+                    "default_value": [
+                        0.0, 
+                        0.229271, 
+                        0.418882
+                    ], 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "sun_direction", 
+                    "spec_default_value": "float3(0.0, 0.229271, 0.418882)", 
+                    "type": "float3"
+                }, 
+                {
+                    "default_value": 0.01, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "sun_disk_intensity", 
+                    "spec_default_value": "0.01", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 0.5, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "sun_disk_scale", 
+                    "spec_default_value": "0.5", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": 1.0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "sun_glow_intensity", 
+                    "spec_default_value": "1.0", 
+                    "type": "float"
+                }, 
+                {
+                    "default_value": true, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "y_is_up", 
+                    "spec_default_value": "true", 
+                    "type": "bool"
+                }, 
+                {
+                    "default_value": 0, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "flags", 
+                    "spec_default_value": "0", 
+                    "type": "int"
+                }, 
+                {
+                    "default_value": true, 
+                    "expose_as_input": true, 
+                    "expose_as_parameter": true, 
+                    "is_uniform": true, 
+                    "name": "physically_scaled_sun", 
+                    "spec_default_value": "true", 
+                    "type": "bool"
+                }
+            ], 
+            "name": "bool,float,color,float,float,float,float,float,color,color,float3,float,float,float,bool,int,bool", 
+            "outputs": [
+                {
+                    "is_varying": false, 
+                    "name": "output", 
+                    "type": "texture_return"
+                }
+            ]
+        }
+    ]
+}
